@@ -18,7 +18,7 @@ class Setting {
     
     static let shared = Setting()
     
-    var Product: Element {
+    var Product: Element { 
         
         return Element()
     }
