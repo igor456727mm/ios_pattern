@@ -8,16 +8,28 @@
 
 import Foundation
 import UIKit
-protocol Builder {
-    static func createMainModule() -> UIViewController
-    
+protocol AsselderBuilderProtocol {
+     func createMainModule(router: RouterProtocol) -> UIViewController
+     func createDetailModule(post: Post?, router: RouterProtocol) -> UIViewController
 }
-class ModuleBuilder:Builder {
-    static func createMainModule() -> UIViewController {
-        let person = Person(firstName: "Igor", lastName: "Selivestrov")
+class AsselderModuleBuilder:AsselderBuilderProtocol {
+    func createMainModule(router: RouterProtocol) -> UIViewController {
+        //let person = Person(firstName: "Igor", lastName: "Selivestrov")
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, person: person)
+        let networkService = NetworkService()
+        let presenter = MainPresenter(view: view, networkService: networkService, router: router)
         view.presenter = presenter
         return view
     }
+    
+    func createDetailModule(post: Post?, router: RouterProtocol) -> UIViewController {
+        let view = DetailViewController()
+        let networkService = NetworkService()
+        let presenter = DetailPresenter(view: view, networkService: networkService, post: post, router: router)
+        view.presenter = presenter
+        return view
+    }
+    
+    
+    
 }

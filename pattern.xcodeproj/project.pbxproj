@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CF2E58AA24A23010003F61AC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58A924A23010003F61AC /* MainPresenter.swift */; };
-		CF2E58AC24A230AE003F61AC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58AB24A230AE003F61AC /* Person.swift */; };
+		CF2E58AC24A230AE003F61AC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58AB24A230AE003F61AC /* Post.swift */; };
 		CF2E58AE24A233F0003F61AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58AD24A233F0003F61AC /* MainViewController.swift */; };
 		CF2E58B024A23684003F61AC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E58AF24A23684003F61AC /* MainViewController.xib */; };
 		CF2E58B224A238D2003F61AC /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */; };
+		CF2E58B524A26041003F61AC /* MainPresentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58B424A26041003F61AC /* MainPresentTest.swift */; };
+		CF2E58BD24A26163003F61AC /* patternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58BC24A26163003F61AC /* patternTests.swift */; };
+		CF2E58C524A27B79003F61AC /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58C424A27B79003F61AC /* DetailPresenter.swift */; };
+		CF2E58CA24A2818A003F61AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58C924A2818A003F61AC /* DetailViewController.swift */; };
+		CF2E58CC24A281A5003F61AC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E58CB24A281A5003F61AC /* DetailViewController.xib */; };
+		CF2E58D024A29F80003F61AC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58CF24A29F80003F61AC /* Router.swift */; };
 		CF32E451249F68FB0027BA93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E450249F68FB0027BA93 /* AppDelegate.swift */; };
 		CF32E453249F68FB0027BA93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E452249F68FB0027BA93 /* SceneDelegate.swift */; };
 		CF32E455249F68FB0027BA93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E454249F68FB0027BA93 /* ViewController.swift */; };
@@ -34,12 +40,30 @@
 		CF48700C24A01E850038AD32 /* TestViewExtantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48700B24A01E850038AD32 /* TestViewExtantion.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CF2E58BF24A26163003F61AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF32E445249F68FB0027BA93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF32E44C249F68FB0027BA93;
+			remoteInfo = pattern;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CF2E58A924A23010003F61AC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		CF2E58AB24A230AE003F61AC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CF2E58AB24A230AE003F61AC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CF2E58AD24A233F0003F61AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CF2E58AF24A23684003F61AC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		CF2E58B424A26041003F61AC /* MainPresentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresentTest.swift; sourceTree = "<group>"; };
+		CF2E58BA24A26163003F61AC /* patternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E58BC24A26163003F61AC /* patternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patternTests.swift; sourceTree = "<group>"; };
+		CF2E58BE24A26163003F61AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2E58C424A27B79003F61AC /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		CF2E58C924A2818A003F61AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CF2E58CB24A281A5003F61AC /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CF2E58CF24A29F80003F61AC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CF32E44D249F68FB0027BA93 /* pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF32E450249F68FB0027BA93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF32E452249F68FB0027BA93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF2E58B724A26163003F61AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF32E44A249F68FB0027BA93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,19 +109,82 @@
 		CF2E58A824A22FEF003F61AC /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				CF2E58A924A23010003F61AC /* MainPresenter.swift */,
-				CF2E58AB24A230AE003F61AC /* Person.swift */,
 				CF2E58AD24A233F0003F61AC /* MainViewController.swift */,
-				CF2E58AF24A23684003F61AC /* MainViewController.xib */,
+				CF2E58CE24A281D6003F61AC /* view */,
+				CF2E58C724A2815A003F61AC /* Detail */,
+				CF2E58C624A27D99003F61AC /* presenter */,
+				CF2E58B324A26029003F61AC /* TEST */,
+				CF2E58AB24A230AE003F61AC /* Post.swift */,
 				CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */,
+				CF2E58CF24A29F80003F61AC /* Router.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		CF2E58B324A26029003F61AC /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58B424A26041003F61AC /* MainPresentTest.swift */,
+			);
+			path = TEST;
+			sourceTree = "<group>";
+		};
+		CF2E58BB24A26163003F61AC /* patternTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58BC24A26163003F61AC /* patternTests.swift */,
+				CF2E58BE24A26163003F61AC /* Info.plist */,
+			);
+			path = patternTests;
+			sourceTree = "<group>";
+		};
+		CF2E58C624A27D99003F61AC /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58A924A23010003F61AC /* MainPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		CF2E58C724A2815A003F61AC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58CD24A281B9003F61AC /* view */,
+				CF2E58C824A28168003F61AC /* presenter */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CF2E58C824A28168003F61AC /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58C424A27B79003F61AC /* DetailPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		CF2E58CD24A281B9003F61AC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58C924A2818A003F61AC /* DetailViewController.swift */,
+				CF2E58CB24A281A5003F61AC /* DetailViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CF2E58CE24A281D6003F61AC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58AF24A23684003F61AC /* MainViewController.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		CF32E444249F68FB0027BA93 = {
 			isa = PBXGroup;
 			children = (
 				CF32E44F249F68FB0027BA93 /* pattern */,
+				CF2E58BB24A26163003F61AC /* patternTests */,
 				CF32E44E249F68FB0027BA93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				CF32E44D249F68FB0027BA93 /* pattern.app */,
+				CF2E58BA24A26163003F61AC /* patternTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +278,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF2E58B924A26163003F61AC /* patternTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E58C124A26163003F61AC /* Build configuration list for PBXNativeTarget "patternTests" */;
+			buildPhases = (
+				CF2E58B624A26163003F61AC /* Sources */,
+				CF2E58B724A26163003F61AC /* Frameworks */,
+				CF2E58B824A26163003F61AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2E58C024A26163003F61AC /* PBXTargetDependency */,
+			);
+			name = patternTests;
+			productName = patternTests;
+			productReference = CF2E58BA24A26163003F61AC /* patternTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CF32E44C249F68FB0027BA93 /* pattern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF32E464249F68FD0027BA93 /* Build configuration list for PBXNativeTarget "pattern" */;
@@ -210,6 +323,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Igor Selivestrov";
 				TargetAttributes = {
+					CF2E58B924A26163003F61AC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF32E44C249F68FB0027BA93;
+					};
 					CF32E44C249F68FB0027BA93 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -230,17 +347,26 @@
 			projectRoot = "";
 			targets = (
 				CF32E44C249F68FB0027BA93 /* pattern */,
+				CF2E58B924A26163003F61AC /* patternTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF2E58B824A26163003F61AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF32E44B249F68FB0027BA93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF32E460249F68FD0027BA93 /* LaunchScreen.storyboard in Resources */,
 				CF32E45D249F68FD0027BA93 /* Assets.xcassets in Resources */,
+				CF2E58CC24A281A5003F61AC /* DetailViewController.xib in Resources */,
 				CF32E458249F68FB0027BA93 /* Main.storyboard in Resources */,
 				CF2E58B024A23684003F61AC /* MainViewController.xib in Resources */,
 			);
@@ -249,12 +375,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF2E58B624A26163003F61AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E58BD24A26163003F61AC /* patternTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF32E449249F68FB0027BA93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF48700524A017600038AD32 /* ViewData.swift in Sources */,
 				CF32E468249F69650027BA93 /* Setting.swift in Sources */,
+				CF2E58D024A29F80003F61AC /* Router.swift in Sources */,
+				CF2E58B524A26041003F61AC /* MainPresentTest.swift in Sources */,
 				CF32E46D249F6F690027BA93 /* Params.swift in Sources */,
 				CF48700C24A01E850038AD32 /* TestViewExtantion.swift in Sources */,
 				CF32E455249F68FB0027BA93 /* ViewController.swift in Sources */,
@@ -267,7 +403,9 @@
 				CF486FFC249FEF6B0038AD32 /* ClosureController.swift in Sources */,
 				CF32E453249F68FB0027BA93 /* SceneDelegate.swift in Sources */,
 				CF2E58AA24A23010003F61AC /* MainPresenter.swift in Sources */,
-				CF2E58AC24A230AE003F61AC /* Person.swift in Sources */,
+				CF2E58CA24A2818A003F61AC /* DetailViewController.swift in Sources */,
+				CF2E58AC24A230AE003F61AC /* Post.swift in Sources */,
+				CF2E58C524A27B79003F61AC /* DetailPresenter.swift in Sources */,
 				CF32E471249F70A20027BA93 /* FactoryProduct.swift in Sources */,
 				CF2E58B224A238D2003F61AC /* ModuleBuilder.swift in Sources */,
 				CF32E46A249F6ED50027BA93 /* Product.swift in Sources */,
@@ -278,6 +416,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2E58C024A26163003F61AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF32E44C249F68FB0027BA93 /* pattern */;
+			targetProxy = CF2E58BF24A26163003F61AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF32E456249F68FB0027BA93 /* Main.storyboard */ = {
@@ -299,6 +445,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF2E58C224A26163003F61AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J6NQU29WC;
+				INFOPLIST_FILE = patternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Igor-Selivestrov.patternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pattern.app/pattern";
+			};
+			name = Debug;
+		};
+		CF2E58C324A26163003F61AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J6NQU29WC;
+				INFOPLIST_FILE = patternTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Igor-Selivestrov.patternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pattern.app/pattern";
+			};
+			name = Release;
+		};
 		CF32E462249F68FD0027BA93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +581,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -457,6 +644,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF2E58C124A26163003F61AC /* Build configuration list for PBXNativeTarget "patternTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E58C224A26163003F61AC /* Debug */,
+				CF2E58C324A26163003F61AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF32E448249F68FB0027BA93 /* Build configuration list for PBXProject "pattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

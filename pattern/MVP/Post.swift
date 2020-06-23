@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Person {
-    let firstName: String
-    let lastName: String
-    
+struct Post: Decodable {
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
 }

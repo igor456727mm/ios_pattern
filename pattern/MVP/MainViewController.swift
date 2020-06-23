@@ -10,23 +10,52 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
     var presenter: MainViewPresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
     
     @IBAction func didTabButtomAction(_ sender: UIButton) {
-        self.presenter.showGreeting()
+       
     }
 }
 
-extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
-        self.greetingLabel.text = greeting
+extension MainViewController:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(presenter.posts?.count ?? 0)
+        return presenter.posts?.count ?? 0
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let post = presenter.posts?[indexPath.row]
+        cell.textLabel?.text = post?.body
+        return cell 
+    }
+    
+    
+}
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = presenter.posts?[indexPath.row]
+        //let detailViewController = AsselderModuleBuilder.createDetailModule(AsselderModuleBuilder)
+        //navigationController?.pushViewController(detailViewController, animated: true)
+        presenter.tabOnThePost(post: post)
+    }
+}
+extension MainViewController: MainViewProtocol {
+    func succsess() {
+        tableView.reloadData()
+    }
+    
+    func failure(error: Error) {
+        print(error.localizedDescription)
+    }
+    
+   
     
 }

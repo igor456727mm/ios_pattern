@@ -8,8 +8,36 @@
 
 import UIKit
 import Foundation
-
-class NetworkService {
+protocol NetworkServiceProtocol {
+    func getPost(completion: @escaping (Result<[Post]?, Error>) -> Void)
+}
+class NetworkService: NetworkServiceProtocol {
+    func getPost(completion: @escaping (Result<[Post]?, Error>) -> Void) {
+        
+        guard let urlString = Setting.shared.urlString as String? else { return  }
+        guard let url = URL(string: urlString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error ) in
+            
+            if error != nil {
+                completion(.failure(error!))
+                return
+            }
+            guard let data = data else { return }
+            do {
+                let  jsonString = try JSONDecoder().decode([Post].self, from: data)
+                
+                completion(.success(jsonString))
+            } catch {
+                completion(.failure(error))
+            }
+            
+            
+        }
+        .resume()
+    }
+    
+    
     class func fetch(completion: @escaping (String) -> ())
     {
         guard let urlString = Setting.shared.urlString as String? else { return  }
