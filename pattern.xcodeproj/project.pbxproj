@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2E58AA24A23010003F61AC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58A924A23010003F61AC /* MainPresenter.swift */; };
+		CF2E58AC24A230AE003F61AC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58AB24A230AE003F61AC /* Person.swift */; };
+		CF2E58AE24A233F0003F61AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58AD24A233F0003F61AC /* MainViewController.swift */; };
+		CF2E58B024A23684003F61AC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E58AF24A23684003F61AC /* MainViewController.xib */; };
+		CF2E58B224A238D2003F61AC /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */; };
 		CF32E451249F68FB0027BA93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E450249F68FB0027BA93 /* AppDelegate.swift */; };
 		CF32E453249F68FB0027BA93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E452249F68FB0027BA93 /* SceneDelegate.swift */; };
 		CF32E455249F68FB0027BA93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF32E454249F68FB0027BA93 /* ViewController.swift */; };
@@ -30,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF2E58A924A23010003F61AC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CF2E58AB24A230AE003F61AC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CF2E58AD24A233F0003F61AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CF2E58AF24A23684003F61AC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		CF32E44D249F68FB0027BA93 /* pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF32E450249F68FB0027BA93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF32E452249F68FB0027BA93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF2E58A824A22FEF003F61AC /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E58A924A23010003F61AC /* MainPresenter.swift */,
+				CF2E58AB24A230AE003F61AC /* Person.swift */,
+				CF2E58AD24A233F0003F61AC /* MainViewController.swift */,
+				CF2E58AF24A23684003F61AC /* MainViewController.xib */,
+				CF2E58B124A238D2003F61AC /* ModuleBuilder.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
 		CF32E444249F68FB0027BA93 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,7 @@
 		CF32E44F249F68FB0027BA93 /* pattern */ = {
 			isa = PBXGroup;
 			children = (
+				CF2E58A824A22FEF003F61AC /* MVP */,
 				CF486FFF24A016980038AD32 /* mvvm */,
 				CF486FFA249FEF5C0038AD32 /* Closure */,
 				CF32E46B249F6F4E0027BA93 /* Factory Pattern */,
@@ -219,6 +242,7 @@
 				CF32E460249F68FD0027BA93 /* LaunchScreen.storyboard in Resources */,
 				CF32E45D249F68FD0027BA93 /* Assets.xcassets in Resources */,
 				CF32E458249F68FB0027BA93 /* Main.storyboard in Resources */,
+				CF2E58B024A23684003F61AC /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,10 +266,14 @@
 				CF48700124A016AE0038AD32 /* MvvmController.swift in Sources */,
 				CF486FFC249FEF6B0038AD32 /* ClosureController.swift in Sources */,
 				CF32E453249F68FB0027BA93 /* SceneDelegate.swift in Sources */,
+				CF2E58AA24A23010003F61AC /* MainPresenter.swift in Sources */,
+				CF2E58AC24A230AE003F61AC /* Person.swift in Sources */,
 				CF32E471249F70A20027BA93 /* FactoryProduct.swift in Sources */,
+				CF2E58B224A238D2003F61AC /* ModuleBuilder.swift in Sources */,
 				CF32E46A249F6ED50027BA93 /* Product.swift in Sources */,
 				CF486FFE249FF2860038AD32 /* NetworkService.swift in Sources */,
 				CF32E46F249F702C0027BA93 /* ParamsDefault.swift in Sources */,
+				CF2E58AE24A233F0003F61AC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
