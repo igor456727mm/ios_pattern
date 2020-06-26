@@ -20,15 +20,11 @@ protocol MainViewPresenterProtocol: class {
 }
 
 class MainPresenter: MainViewPresenterProtocol {
-    func tabOnThePost(post: Post?) {
-        router?.showDetail(post: post)
-    }
-    
-    
     var posts: [Post]?
     weak var view: MainViewProtocol?
     let networkService: NetworkServiceProtocol!
     var router : RouterProtocol?
+    
     func getPosts() {
         networkService.getPost{ [weak self] result in
             guard let self = self else { return }
@@ -45,7 +41,9 @@ class MainPresenter: MainViewPresenterProtocol {
         }
     }
     
-   
+   func tabOnThePost(post: Post?) {
+       router?.showDetail(post: post)
+   }
     
     
     required init(view: MainViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol) {

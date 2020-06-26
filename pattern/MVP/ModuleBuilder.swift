@@ -8,13 +8,13 @@
 
 import Foundation
 import UIKit
+
 protocol AsselderBuilderProtocol {
      func createMainModule(router: RouterProtocol) -> UIViewController
      func createDetailModule(post: Post?, router: RouterProtocol) -> UIViewController
 }
 class AsselderModuleBuilder:AsselderBuilderProtocol {
     func createMainModule(router: RouterProtocol) -> UIViewController {
-        //let person = Person(firstName: "Igor", lastName: "Selivestrov")
         let view = MainViewController()
         let networkService = NetworkService()
         let presenter = MainPresenter(view: view, networkService: networkService, router: router)

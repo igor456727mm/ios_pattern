@@ -16,7 +16,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
     }
     
     @IBAction func didTabButtomAction(_ sender: UIButton) {
@@ -26,7 +25,6 @@ class MainViewController: UIViewController {
 
 extension MainViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(presenter.posts?.count ?? 0)
         return presenter.posts?.count ?? 0
     }
     
@@ -42,8 +40,6 @@ extension MainViewController:UITableViewDataSource {
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = presenter.posts?[indexPath.row]
-        //let detailViewController = AsselderModuleBuilder.createDetailModule(AsselderModuleBuilder)
-        //navigationController?.pushViewController(detailViewController, animated: true)
         presenter.tabOnThePost(post: post)
     }
 }
@@ -55,7 +51,4 @@ extension MainViewController: MainViewProtocol {
     func failure(error: Error) {
         print(error.localizedDescription)
     }
-    
-   
-    
 }

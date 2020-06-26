@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //let NavBar = UINavigationController(rootViewController: mainVC)
         //window?.rootViewController = NavBar
         let navigationController = UINavigationController()
-        let asselderBuilder = AsselderModuleBuilder()
-        let router = Router(navigationController: navigationController, assemblyBuilder: asselderBuilder)
+        let asselderBuilder = WeatherAsselderModuleBuilder()
+        let router = WeatherRouter(navigationController: navigationController, assemblyBuilder: asselderBuilder)
         router.initialViewController()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
